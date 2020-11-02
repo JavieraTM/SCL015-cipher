@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+
+<head>
+  <div class="flex-container">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Privapp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+  </div>
+</head>
+
+<body>
+  <div id="root" class="flex-container">
+    <header>
+      <h1>Privapp</h1>
+      <img src="https://ibb.co/tbbBt0c" />
+    </header>
+    <div>
+      <h1>Mensajería Cifrada. Segura y confiable.</h1>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <div>
+      <h5>Con Privapp disfruta de mensajear con quien quieras de forma privada y
+        secreta.</h5>
+    </div>
+    <div><button class="button" id="startButton">Ingresar</button></div>
+  </div>
+  <!------------------------------User name y Avatar------------------------------>
+
+  <section id="username" class="panel" hidden>
+    <div>
+      <h2>Elige un nombre de usuario y un avatar.</h2>
+      <br />
+      <input type="text" id="nombre" placeholder="Ingresa tu Username secreto" required /><br />
+      <button class="button" id="userButton" onclick="guardarNombre()">
+        Ingresar
+      </button>
+    </div>
+  </section>
+
+
+
+</body>
+
 </html>

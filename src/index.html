@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <div class="flex-container">
@@ -7,42 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Privapp</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </div>
 </head>
 
-<body>
+
+<!--------------------------Logo Privapp-------------------------------------->
+
+<body background="https://vistapointe.net/images/dark-textures-8.jpg">
   <div id="root" class="flex-container">
-    <header>
-      <h1>Privapp</h1>
-      <img src="https://ibb.co/tbbBt0c" />
+    <header class="logo">
+      <h>Privapp</h>
+      <img class="img.logo" src="Images/logo-candado.png">
     </header>
-    <div>
-      <h1>Mensajería Cifrada. Segura y confiable.</h1>
+
+    <!-------------------------MENSAJE BIENVENIDA------------------------------------->
+    <div id="bienvenida" class="panel">
+      <main>
+        <h1>Mensajería Cifrada. Segura y confiable.</h1>
+        <h5>Con Privapp disfruta de mensajear con quien quieras de forma privada y
+          secreta.</h5>
+        <button class=" button" id="startButton">Ingresar</button>
+      </main>
     </div>
-    <div>
-      <h5>Con Privapp disfruta de mensajear con quien quieras de forma privada y
-        secreta.</h5>
+    <div class="celular">
+      <figure>
+        <img src="Images/celular.png">
+      </figure>
     </div>
-    <div><button class="button" id="startButton">Ingresar</button></div>
+
+
+    <!------------------------------User name y Avatar------------------------------>
+
+    <div id="username" class="panel">
+      <section>
+        <div>
+          <h2>Elige un nombre de usuario y un avatar.</h2>
+          <br />
+          <input type="text" id="nombre" placeholder="Ingresa tu Username secreto" required /><br />
+          <button class="button" id="userButton" onclick="guardarNombre()">
+            Ingresar
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-------------------------Cifrado---------------------------->
+
+    <div>
+      <section id="cifrado" class="panel">
+        <h3>Escribe el mensaje que quieres cifrar, en mayusculas y sin Ñ</h3>
+        <p><input type="text" id="mensaje" /></p>
+        <h3>Elige un numero de desplazamiento, que será la clave para tu receptor secreto</h3>
+        <p><input type="number" id="desplazamiento" /></p>
+        <p><button type="button" id="cifrar">Cifrar</button>
+        <h3>Mensaje cifrado</h3>
+        <p><input type="text" id="mensaje2" /></p>
+        <button type="button" id="enviar">Enviar</button> </p>
+
+      </section>
+    </div>
   </div>
-  <!------------------------------User name y Avatar------------------------------>
-
-  <section id="username" class="panel" hidden>
-    <div>
-      <h2>Elige un nombre de usuario y un avatar.</h2>
-      <br />
-      <input type="text" id="nombre" placeholder="Ingresa tu Username secreto" required /><br />
-      <button class="button" id="userButton" onclick="guardarNombre()">
-        Ingresar
-      </button>
-    </div>
-  </section>
-
-
-
 </body>
 
 </html>

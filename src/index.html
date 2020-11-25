@@ -2,77 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Raleway:wght@100&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privapp</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privapp</title>
 </head>
 
 <!------------------------------------Logo Privapp------------------------------------------>
 
 <body background="https://vistapointe.net/images/dark-textures-8.jpg">
-    <header class="logo">
-        <h>Privapp</h>
-        <img src="https://imagizer.imageshack.com/img924/8798/qnUlz2.png">
-    </header>
+  <header class="logo">
+    <h>Privapp</h>
+    <img src="https://imagizer.imageshack.com/img924/8798/qnUlz2.png">
+  </header>
 
-    <div id="root">
+  <div id="root">
 
-        <!------------------------------------Página principal------------------------------------------>
-        <div class="flex-container">
-            <section class="startScreen" id="startDisplay">
-                <div class="item">
-                    <main>
-                        <h1>Mensajería Cifrada. Segura y confiable.</h1>
-                        <h5>Con Privapp disfruta de mensajear con quien quieras de forma privada y
-                            secreta.</h5>
-                        <!--imagen globos de chat azules-->
-                        <p><img src="https://imagizer.imageshack.com/img922/8372/dkqsjK.png"></p>
-                        <!--botones para cifrar o descifrar-->
-                        <button class="buttonStart" id="goToEncode">Quiero cifrar un
-                            mensaje</button>
-                    </main>
-                </div>
-                <div class="item2">
-                    <aside>
-                        <p><img src="https://imagizer.imageshack.com/img924/8417/exolQa.png"></p>
-                    </aside>
-                </div>
-            </section>
+    <!------------------------------------Página principal------------------------------------------>
+    <div class="flex-container">
+      <section class="startScreen" id="startDisplay">
+        <div class="item">
+          <main>
+            <h1>Mensajería Cifrada. Segura y confiable.</h1>
+            <h5>Con Privapp disfruta de mensajear con quien quieras de forma privada y
+              secreta.</h5>
+            <!--imagen globos de chat azules-->
+            <p><img src="https://imagizer.imageshack.com/img922/8372/dkqsjK.png"></p>
+            <!--botones para cifrar o descifrar-->
+            <button class="buttonStart" id="goToEncode">Quiero cifrar un
+              mensaje</button>
+          </main>
         </div>
+        <div class="item2">
+          <aside>
+            <p><img src="https://imagizer.imageshack.com/img924/8417/exolQa.png"></p>
+          </aside>
+        </div>
+      </section>
+    </div>
 
-        <!------------------------------------Página cifrado------------------------------------------>
+    <!------------------------------------Página cifrado------------------------------------------>
 
-        <body background="https://vistapointe.net/images/dark-textures-8.jpg">
-            <section id="encodeDisplay" class="encodeScreen">
-                <article class="tittle">
-                    <p class="tittle">Cifra tus mensajes aquí</p>
-                </article>
+    <section id="encodeDisplay" class="encodeScreen">
+      <article class="tittle">
+        <p class="tittle">Cifra tus mensajes aquí</p>
+      </article>
 
-                <article class="subtittle">
-                    <p>Escribe el mensaje que quieres cifrar y selecciona el número de desplazamiento, que será tu clave
-                        para
-                        descifrar el texto</p>
-                </article>
+      <article class="subtittle">
+        <p>Escribe el mensaje que quieres cifrar y selecciona el número de desplazamiento del 1 al 100, que
+          será tu clave
+          para
+          descifrar el texto</p>
+      </article>
 
-                <section class="selector">
+      <section class="selector">
 
-                    <input type="number" id="offset" role="spinbutton" value='1' min='1'>
+        <input type="number" id="offset" role="spinbutton" value='1' min='1'>|
 
-                </section>
+      </section>
 
-                <aside class="textContainers">
-                    <textarea name="container" id="containerOne" class="container one" rows="6" cols="35"></textarea>
-                    <textarea name="container" id="containerTwo" class="container two" rows="6" cols="35"></textarea>
-                    <p><button id="encodeBtn" onclick="cipher()">Cifrar</button>
-                        <button id="decodeBtn" onclick="decode()">Descifrar</button></p>
-                </aside>
-                <p><button id="returnEncode" class="button">Volver al inicio</button></p>
-            </section>
+      <aside class="textContainers">
+        <textarea name="container" id="containerOne" class="container one" rows="6" cols="35"></textarea>
+        <textarea name="container" id="containerTwo" class="container two" rows="6" cols="35"></textarea>
+        <p><button id="encodeBtn" onclick="cipher()">Cifrar</button>
+          <button id="decodeBtn" onclick="decode()">Descifrar</button></p>
+      </aside>
+      <p><button id="returnEncode" class="button">Volver al inicio</button></p>
+    </section>
 
-            <script src="index.js"></script>
-        </body>
+    <script src="index.js"></script>
+</body>
 
 </html>
